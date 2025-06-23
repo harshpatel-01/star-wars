@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 body,
 div,
 h1,
@@ -11,7 +12,7 @@ p {
 }
 
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Source Code Pro", monospace;
   --dark1: black;
   --light1: white;
   --dark2: darkblue;
@@ -71,7 +72,12 @@ label {
 
 /* Character page */
 h1#name {
-  margin: 5px;
+  margin: 40px;
+  color: darkblue;
+}
+h1#title {
+  margin: 40px;
+  color: darkblue;
 }
 
 #generalInfo {

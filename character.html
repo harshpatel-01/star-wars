@@ -7,23 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="character.js" defer></script>
   <link rel="stylesheet" href="site.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>A Star Wars Character</title>
 </head>
 
 <body>
   <main>
-    <h1 id="name"></h1>
+    <div class="text-center">
+    <h1 id="name" class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">We invest in the world’s potential</h1>
+    </div>
+    <div class="flex justify-center">
+      <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <h5 class="mb-2 text-2xl tracking-tight text-gray-900 dark:text-white">Height: <span id="height"> kg</span></h5>
+        </a>
+      <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <h5 class="mb-2 text-2xl tracking-tight text-gray-900 dark:text-white">Mass: <span id="mass"></span>kg</h5>
+          </a>     
+      <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <h5 class="mb-2 text-2xl tracking-tight text-gray-900 dark:text-white">Born:<span id="birth_year"></span></h5>
+          </a>    
+    </div>
     <section id="generalInfo">
-      <p>Height: <span id="height"></span> cm</p>
-      <p>Mass: <span id="mass"></span> kg</p>
-      <p>Born: <span id="birth_year"></span></p>
+
     </section>
-    <section id="planets">
-      <h2>Homeworld</h2>
+    <section id="planets" class="text-center">
+      <h1 id="name" class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">homeworld/</h1>
       <p><span id="homeworld"></span></p>
     </section>
-    <section id="films">
-      <h2 id="name">Films appeared in</h2>
+    <section id="films" class="text-center">
+      <h2 id="name">Films appeared in:</h2>
       <ul></ul>
     </section>
     </section>
