@@ -11,12 +11,25 @@
   <title>A Star Wars Character</title>
 </head>
 
-<body class="flex justify-center">
+<body class="flex justify-center min-h-screen items-center">
   <main >
     
-
-  <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 dark:bg-gray-800 dark:border-gray-700">
+  <div class="bg-white p-6 rounded-2xl shadow-lg shadow-gray-100 border-gray-200/50">
     <h1 class="text-3xl font-bold " id="name"></h1>
+
+    <svg width="400" height="60" viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg">
+      <!-- Handle -->
+      <rect x="10" y="25" width="50" height="10" fill="#333" />
+      <circle cx="15" cy="30" r="3" fill="#999" />
+      <circle cx="25" cy="30" r="2" fill="#999" />
+      
+      <!-- Blade core -->
+      <rect x="60" y="27" width="300" height="6" fill="#00f" />
+      
+      <!-- Glow effect -->
+      <rect x="60" y="22" width="300" height="16" fill="#00f" opacity="0.25" rx="8" />
+    </svg>
+    
     
     <p class="text-sm font-normal text-gray-500 dark:text-gray-400">Planetary data...</p>
     

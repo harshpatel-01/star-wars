@@ -16,7 +16,7 @@ p {
   --light1: white;
   --dark2: darkblue;
   --light2: lightblue;
-  background-color: var(--light1);
+  background-color: #fcfbfc;
   color: var(--dark1);
 }
 
@@ -71,7 +71,7 @@ label {
 
 /* Character page */
 h1#name {
-  margin: 50px;
+  margin: 5px;
 }
 
 #generalInfo {

@@ -6,19 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Star Wars Characters</title>
-  <link rel="stylesheet" href="site.css">
+  <!-- <link rel="stylesheet" href="site.css"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="index.js" defer></script>
 </head>
 
-<body>
-  <div>
-    <h1>Star Wars Universe Lookup</h1>
-    <label for="searchString">Who you looking for? <span class="small">(Regular expressions are cool
-        here)</span></label>
-    <input id="searchString" oninput="filterCharacters()" autocomplete="off" />
+<body class="min-h-screen flex items-center justify-center">
+  
+  <div class="text-center">
+    <h1 class="text-3xl font-bold mb-4">Star Wars Universe Lookup</h1>
+    <label 
+      for="searchString"
+      class="block mb-2 text-sm text-gray-400"
+    >
+      Who you looking for? 
+      <span class="text-sm text-gray-400">
+        (Regular expressions are cool here)
+      </span>
+
+    </label>
+
+    <input 
+      id="searchString" 
+      oninput="filterCharacters()" 
+      autocomplete="off" 
+      class="w-80 px-4 py-2 mb-4 text-black rounded-lg border border-gray-200 shadow-md"
+    />
+
+    <section 
+      id="charactersList"
+      class="mx-auto w-80 max-h-48 overflow-y-auto space-y-2"
+    >
+    </section>
   </div>
-  <section id="charactersList">
-  </section>
+ 
 </body>
 
 </html>
