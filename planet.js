@@ -3,6 +3,9 @@ let surfaceSpan
 let climateSpan
 let diameterSpan
 let terrainSpan
+let orbitalPeriodSpan
+let rotationPeriodSpan
+let populationSpan
 let planets = []
 const baseUrl = `http://localhost:9001/api`;
 
@@ -14,6 +17,9 @@ addEventListener('DOMContentLoaded', () =>{
     climateSpan = document.querySelector('span#climate')
     diameterSpan = document.querySelector('span#diameter')
     terrainSpan = document.querySelector('span#terrain')
+    orbitalPeriodSpan = document.querySelector('span#orbit')
+    rotationPeriodSpan = document.querySelector('span#rotation')
+    populationSpan = document.querySelector('span#pop')
     const searchParam = new URLSearchParams(window.location.search)
     const id = searchParam.get('id')
     console.log("searhc param id: ", id)
@@ -58,5 +64,9 @@ const renderPlanet = planet => {
     climateSpan.textContent = planet?.climate
     diameterSpan.textContent = planet?.diameter
     terrainSpan.textContent = planet?.terrain
+    populationSpan.textContent = planet?.population 
+    orbitalPeriodSpan.textContent = planet?.orbital_period 
+    rotationPeriodSpan.textContent = planet?.rotation_period 
+   
     
 }  
